@@ -1,0 +1,467 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+.bronze{
+     color:#a5c422 ;
+}
+body {
+  background: #a5c422;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  
+}
+h3 {
+  text-align: center;
+  
+  font-size: 2em;
+  line-height: 1.2em;
+  margin-bottom: 0;
+}
+
+a {
+ 
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+   .block{
+        display: inline-flex ;
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+   }
+   .benefits{
+        font-size: large;
+        font-weight: bold;
+   }
+   .navbar-col2 {
+    width:100vw;
+    margin-top:550px;
+    position: fixed;
+    margin-left: 1.%;
+    float:left;
+    top: 0;
+    height:50px;
+    background-color:#9db91f;
+  }
+
+  
+  .navbar-button{
+    width: 19%;
+    margin-right:1%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #ddd;
+    overflow: hidden;
+  }
+  .navbar-button:hover{
+    background-color: #87a017;
+  
+  
+  }
+  .navbar-button:hover .navbar-button-line{
+    background-color: red;
+  
+  }
+  .icon1{
+    /* margin-top: 2px; */
+  margin-left: 20px;
+    float:left;
+    text-align: center;
+    width: 30px;
+    height:30px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+  
+  }
+  .icon1-home{
+    background-image: url('../images/home.png');
+  }
+  .icon1-aboutus{
+     background-image: url('../images/aboutus.png');
+  }
+  .icon1-benefits{
+    background-image: url('../images/benefits.png');
+  }
+  .icon1-contact{
+    background-image: url('../images/contactus.png');
+  }
+  .icon1-appointment{
+    background-image: url('../images/appointment.png');
+  }
+  .icon1-search{
+    background-image: url('../images/search-12-16(1).png');
+  }
+  .button-text {
+    font-size: 0.48em;
+    font-weight:800;
+    color: black;
+    margin-bottom: -5px;
+    margin-left: -7px;
+   
+  
+  }
+  .button-text1 {
+    font-size: 0.8em;
+    color: black;
+    margin-bottom: -5px;
+    margin-left: -7px;
+    /* height: 20px; */
+    /* line-height: 28px; */
+    /* margin-left:30px;  */
+    /* float: left; */
+   
+  
+  }
+  .some-page-wrapper{
+  margin-top:15px;
+  height: 120cm;
+  /* background-color:red; */
+}
+  
+.row{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 100%;
+ 
+  
+
+
+}
+.row1{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 100%;
+}
+.row2{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 100%;
+  
+  
+}
+.row4{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 100%;
+  
+  
+}
+.row3{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 100%;
+  
+  
+}
+.column{
+  
+  display:flex;
+  flex-direction:column;
+  flex-basis: 100%;
+  flex: 1;
+  
+}
+.column1{
+
+  display: block;
+  flex-direction:column;
+  flex-basis: 100%;
+  flex: 1;
+ 
+}
+.team-info {
+  border-radius: 5%;
+  background-color: rgb(0, 0, 63);
+  margin-top: 15px;
+  padding: 20px 30px 0 30px;
+}
+
+.team-contact-info {
+  border-top: 1px solid #e9e9e9;
+  padding-top: 1.2em;
+  margin-top: 1.5em;
+  width: 100%;
+  height:970px ;
+  background-color: #a5c422 ;
+}
+
+.team-contact-info .fa {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.team-contact-info p {
+  text-align: center;
+  color: white;
+  margin-bottom: 2px;
+}
+.team-contact-info h6{
+  font-size: 1.3em;
+  color: black;
+}
+
+.team-contact-info a {
+  color: #757575;
+}
+
+.team-thumb .social-icon li {
+  font-weight: 500;
+}
+
+.team-thumb .social-icon li a {
+  background: #ffffff;
+  border-radius: 100%;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 2px 0 2px;
+}
+
+.team-thumb .social-icon {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.5s 0.2s;
+  text-align: center;
+  position: relative;
+  top: 0;
+}
+
+.team-thumb:hover .social-icon {
+  opacity: 1;
+  transition-delay: 0.3s;
+  transform: translateY(0px);
+  top: -22em;
+}
+
+
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Summary Of Benefits</title>
+<!--
+
+Template 2098 Health
+
+http://www.tooplate.com/view/2098-health
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <!-- <link rel="stylesheet" href="tooplate-style.css"> -->
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+
+
+<!-- TEAM -->
+<section id="team" data-stellar-background-ratio="1">
+    <div class="some-page-wrapper">
+         <div class="">
+              <div class="about-info">
+                   <h2 class="wow fadeInUp" data-wow-delay="0.1s"> Summary of Benefits</h2>
+              </div>
+         </div>
+         <div class="row1">
+
+              <div class="clearfix"></div>
+
+              <div class="column">
+                   <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- <img src="images/team-image1.jpg" class="img-responsive" alt=""> -->
+
+                             <div class="team-info">
+                                  <h3 class="bronze">BRONZE</h3>
+                                  <h3 class="bronze">N10,000</h3>
+                                  <div class="team-contact-info">
+                                       <h6 class= "benefits"><div class="block"> </div> Optical Care Up To: N10,000</h6>
+                                       <h6 class= "benefits"><div class="block"> </div> Prescribed Drugs Up To: N20,000   </h6> 
+                                       <h6 class= "benefits"><div class="block"> </div> Hospital Outpatient Visit Up To: N150,000</h6>
+                                       <h6 class= "benefits"><div class="block"> </div> No Surgery</h6>
+                                       <h6 class= "benefits"><div class="block"> </div> No Hospital Admission</h6>
+                                       <h6 class= "benefits"><div class="block"> </div> No Dental Care</h6>
+                                       <h6 class= "benefits"><div class="block"> </div> No Maternity Care</h6>
+                                       <p><i class="fa fa-phone"></i><a href="tel: +2348063190409"></a></p>
+                                       <p><i class="fa fa-envelope-o"></i> <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"></a></p>
+                                  </div>
+                                  <ul class="social-icon">
+                                       <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                                       <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="fa fa-envelope-o"></a></li>
+                                  </ul>
+                             </div>
+
+                   </div>
+              </div>
+              <div class="row2">
+                   <div class="column">
+                        <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                             <!-- <img src="images/team-image2.jpg" class="img-responsive" alt=""> -->
+
+                                  <div class="team-info">
+                                       <h3 class="bronze">GOLD</h3>
+                                       <h3 class="bronze">N27,000</h3>
+                                       <div class="team-contact-info">
+                                            <h6 class= "benefits"><div class="block"> </div> Dental Care Up To: N20,000</h6>
+                                            <h6 class= "benefits"><div class="block"> </div> Optical Care Up To: N20,000</h6> 
+                                            <h6 class= "benefits"><div class="block"> </div> Eye Glasses: N10,000</h6>
+                                            <h6 class= "benefits"><div class="block"> </div> Physiotherapy Visit Up To: N25,000</h6>
+                                            <h6 class= "benefits"><div class="block"> </div> Prescribed Pharmacy Drugs Up To: N80,000</h6>
+                                            <h6 class= "benefits"><div class="block"> </div> Hospital Outpatient Visit Up To: N500,000</h6>
+                                            <h6 class= "benefits"><div class="block"> </div> Surgery Up To: N500,000</h6>
+                                            <h6 class= "benefits"><div class="block"> </div> Hospital Inpatient Patient Visit Up To: N500,000</h6>
+                                            <h6 class= "benefits"><div class="block"> </div> CT/M.R.I Scan Only(Emergency/onc Per Annum): N30,000</h6>
+                                            <h6 class= "benefits"><div class="block"> </div> Ante-natal Care & amp; Deliivery Service: N130,000</h6>
+                                            <p><i class="fa fa-phone"></i> </p>
+                                            <p><i class="fa fa-envelope-o"></i> <a href="#"></a></p>
+                                       </div>
+                                       <ul class="social-icon">
+                                            <li><a href="#" class="fa fa-facebook-square"></a></li>
+                                            <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="fa fa-envelope-o"></a></li>
+                                            <li><a href="#" class="fa fa-flickr"></a></li>
+                                       </ul>
+                                  </div>
+
+                        </div>
+                   </div>
+              </div>
+              
+              <div class="row3">
+                   <div class="column1">
+                        <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                             <!-- <img src="images/team-image2.jpg" class="img-responsive" alt=""> -->
+                        <section id="silver">
+                         <div class="team-info">
+                              <h3 class="bronze">SILVER</h3>
+                              <h3 class="bronze">N15,000</h3>
+                              <div class="team-contact-info">
+                                   <h6 class= "benefits"><div class="block"> </div> Dental Care UpTo: N10,000</h6>
+                                   <h6 class= "benefits"><div class="block"> </div> Optical Care Up To: N15,000</h6>
+                                   <h6 class= "benefits"><div class="block"> </div> Physiotherapy Visit Up To: N20,000</h6>
+                                   <h6 class= "benefits"><div class="block"> </div> Prescribed Pharmacy Drugs Up To: N50,000</h6>
+                                   <h6 class= "benefits"><div class="block"> </div> Hospital Inpatient Visit Up To: N250,000</h6>
+                                   <h6 class= "benefits"><div class="block"> </div> Hospital Outpatient Visit Up To: N150,000</h6>
+                                   <h6 class= "benefits"><div class="block"> </div> Surgery Up To: N150,000</h6>
+                                   <h6 class= "benefits"><div class="block"> </div> No Maternity Care</h6>
+                                   <p><i class="fa fa-phone"></i> </p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#"></a></p>
+                              </div>
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square"></a></li>
+                                   <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="fa fa-envelope-o"></a></li>
+                                   <li><a href="#" class="fa fa-flickr"></a></li>
+                              </ul>
+                         </div>
+                        </section>
+                             
+
+                        
+                                 
+                        </div>
+                   </div>
+                   <div class="row4">
+                        <div class="column1">
+                             <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                                  <!-- <img src="images/team-image2.jpg" class="img-responsive" alt=""> -->
+    
+                                       <div class="team-info">
+                                            <h3 class="bronze">FAMILY</h3>
+                                            <h3 class="bronze">N39,000</h3>
+                                            <div class="team-contact-info">
+                                                 <h6 class= "benefits"><div class="block"> </div> Dental Care Up To: N30,000</h6>
+                                                 <h6 class= "benefits"><div class="block"> </div> Optical Care Up To: N50,000</h6>
+                                                 <h6 class= "benefits"><div class="block"> </div> Physiothrapy Visit Up To: N50,000</h6>
+                                                 <h6 class= "benefits"><div class="block"> </div> Prescribed Pharmacy Drugs Up To: N200,0000</h6>
+                                                 <h6 class= "benefits"><div class="block"> </div> Hospital Outpatient Visit Up To: N500,000</h6>
+                                                 <h6 class= "benefits"><div class="block"> </div> Surgery(including Cs) Up To: N300,000</h6>
+                                                 <h6 class= "benefits"><div class="block"> </div> Hospital Inpatient Patient Visit Up To: N600,000</h6>
+                                                 <h6 class= "benefits"><div class="block"> </div> Ante-natal Care & amp: Delivery Service: N100,000</h6>
+                                                 <p><i class="fa fa-phone"></i> </p>
+                                                 <p><i class="fa fa-envelope-o"></i> <a href="#"></a></p>
+                                            </div>
+                                            <ul class="social-icon">
+                                                 
+                                                 <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="fa fa-facebook-square"></a></li>
+                                                 <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                                 <li><a href="#" class="fa fa-flickr"></a></li>
+                                            </ul>
+                                       </div>
+    
+                             </div>
+                        </div>
+                   </div>
+                   
+
+              </div>
+           
+          
+           
+         </div>
+    </div>
+</section>
+</body>
+<div class="navbar-col2 " >
+     <div class="navbar-button  navbar-Home-button">
+          <a href="https://mebina-app.github.io/index.html" >
+         <span class="icon1 icon1-home"></span>
+         <span class="button-text1">Home</span>
+     </a>
+     </div>
+     <div class="navbar-button  navbar-notifications-button">
+          <a href="aboutus.html" >
+         <span class="icon1 icon1-aboutus"></span>
+         <span class="button-text1">About Us</span>
+         </a>
+     </div>
+     <div class="navbar-button navbar-messages-button">
+          <a href="https://form.jotform.com/212554606111546" >
+         <span class="icon1 icon1-appointment"></span>
+         <span class="button-text">Appointment</span>
+         </a>
+     </div>
+     <div class="navbar-button navbar-people-button">
+          <a href="contact.html" >
+         <span class="icon1 icon1-contact"></span>
+         <span class="button-text1">Contact</span>
+         </a>
+     </div>
+     <div class="navbar-button  navbar-hobbies-button">
+          <a href="benefits.html" >
+         <span class="icon1 icon1-benefits"></span>
+         <span class="button-text1">Benefits</span>
+         </a>
+     </div>
+      <!-- <div class="navbar-line-wrapper"> -->
+      
+        
+     <!-- </div>  -->
+  
+  </div> 
+</html>
